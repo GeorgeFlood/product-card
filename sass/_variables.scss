@@ -1,0 +1,23 @@
+///PRIMARY-COLORS
+
+$dark-cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+
+/// SECONDARY COLORS
+$very-dark-blue: hsl(212, 21%, 14%);
+$dark-greyish-blue: hsl(228, 12%, 48%);
+$color-white: #fff;
+
+/// MEDIA QUERIES
+@mixin respond($breakpoint) {
+  @if ($breakpoint == phone) {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if ($breakpoint == tab-port) {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+}

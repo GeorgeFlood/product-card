@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: $cream;
+  size: 100vh;
+}
